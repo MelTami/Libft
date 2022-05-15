@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-size_t	len(int n)
+static size_t	len(int n)
 {
 	size_t	length;
 
@@ -30,7 +30,7 @@ size_t	len(int n)
 	return (length);
 }
 
-char	*value(int n)
+static char	*value(int n)
 {
 	char	*max;
 	char	*ret;

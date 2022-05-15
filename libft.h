@@ -17,7 +17,7 @@
 # include <stdlib.h>
 
 int		ft_atoi(const char *str);
-void	ft_bzero(void *s, unsigned int n);
+void	ft_bzero(void *s, size_t n);
 void	*ft_calloc(size_t nb, size_t size);
 int		ft_isalnum(int n);
 int		ft_isalpha(int n);
@@ -30,7 +30,7 @@ void	*ft_memcpy(void *dest, const void *src, unsigned int n);
 void	*ft_memmove(void *str1, void *str2, unsigned int n);
 void	*ft_memset(void *str, int c, unsigned int n);
 char	*ft_strchr(const char *str, int find);
-char	*ft_strdup(char *src);
+char	*ft_strdup(const char *src);
 char	*ft_strjoin(const char *s1, const char *s2);
 size_t	ft_strlcat(char *dest, const char *str, size_t size);
 size_t	ft_strlcpy(char *dest, const char *str, size_t size);
