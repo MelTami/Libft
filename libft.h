@@ -6,7 +6,7 @@
 /*   By: mvavasso <mvavasso@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/05 22:19:57 by mvavasso          #+#    #+#             */
-/*   Updated: 2022/04/29 00:02:26 by mvavasso         ###   ########.fr       */
+/*   Updated: 2022/06/02 20:03:56 by mvavasso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,5 +50,6 @@ void	ft_putchar_fd(char c, int fd);
 void	ft_putstr_fd(char *s, int fd);
 void	ft_putendl_fd(char *s, int fd);
 void	ft_putnbr_fd(int n, int fd);
+void	ft_putchar(char c)
 
 #endif
