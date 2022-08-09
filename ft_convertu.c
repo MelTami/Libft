@@ -1,22 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
+/*   ft_convertu.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mvavasso <mvavasso@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/04/19 19:43:48 by mvavasso          #+#    #+#             */
-/*   Updated: 2022/08/09 22:10:05 by mvavasso         ###   ########.fr       */
+/*   Created: 2022/06/22 04:26:47 by mvavasso          #+#    #+#             */
+/*   Updated: 2022/08/09 22:07:43 by mvavasso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_putstr_fd(char *s, int fd)
+int	ft_convertu(unsigned int nb)
 {
-	int	size;
+	static int	sum;
 
-	size = ft_strlen(s);
-	write(fd, &*s, size);
-	return (ft_strlen(s));
+	sum = 0;
+	if (nb / 10 > 0)
+		ft_convertu(nb / 10);
+	sum++;
+	ft_putchar((nb % 10) + '0');
+	return (sum);
 }

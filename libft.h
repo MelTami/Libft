@@ -6,7 +6,7 @@
 /*   By: mvavasso <mvavasso@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/05 22:19:57 by mvavasso          #+#    #+#             */
-/*   Updated: 2022/08/09 20:22:37 by mvavasso         ###   ########.fr       */
+/*   Updated: 2022/08/09 22:17:25 by mvavasso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 # define LIBFT_H
 # define BUFFER_SIZE 42
 
+# include <stdarg.h>
 # include <unistd.h>
 # include <stdlib.h>
 
@@ -48,12 +49,17 @@ char	*ft_itoa(int n);
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 void	ft_striteri(char *s, void (*f)(unsigned int, char*));
 void	ft_putchar_fd(char c, int fd);
-void	ft_putstr_fd(char *s, int fd);
+int		ft_putstr_fd(char *s, int fd);
 void	ft_putendl_fd(char *s, int fd);
 void	ft_putnbr_fd(int n, int fd);
 void	ft_putchar(char c);
 void	ft_free(char **str);
 void	ft_putnbrbase(unsigned long num, char *base);
 char	*get_next_line(int fd);
+int		ft_printf(const char *s, ...);
+int		ft_converthex(int hex, char *s);
+int		ft_convertptr(void *ptr);
+int		ft_convertint(int nb);
+int		ft_convertu(unsigned int nb);
 
 #endif
