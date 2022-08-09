@@ -6,7 +6,7 @@
 /*   By: mvavasso <mvavasso@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/05 22:19:57 by mvavasso          #+#    #+#             */
-/*   Updated: 2022/06/02 20:35:53 by mvavasso         ###   ########.fr       */
+/*   Updated: 2022/08/09 20:22:37 by mvavasso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,5 +54,6 @@ void	ft_putnbr_fd(int n, int fd);
 void	ft_putchar(char c);
 void	ft_free(char **str);
 void	ft_putnbrbase(unsigned long num, char *base);
+char	*get_next_line(int fd);
 
 #endif

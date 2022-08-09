@@ -6,7 +6,7 @@
 /*   By: mvavasso <mvavasso@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/02 20:35:28 by mvavasso          #+#    #+#             */
-/*   Updated: 2022/06/02 20:35:46 by mvavasso         ###   ########.fr       */
+/*   Updated: 2022/07/25 15:48:35 by mvavasso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,6 @@ void	ft_putnbrbase(unsigned long num, char *base)
 
 	len_base = ft_strlen(base);
 	if (num / len_base > 0)
-		ft_putbase(num / len_base, base);
+		ft_putnbrbase(num / len_base, base);
 	ft_putchar(base[num % len_base]);
 }
