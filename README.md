@@ -83,6 +83,11 @@ The Libft is a project in the 42 course that we create a library, with the C hig
     <td><a href="https://github.com/MelTami/Libft/blob/master/sources/ft_lstlast.c">ft_lstlast</a></td>
     <td>Returns the last node of the list.</td>
     <td>t_list *ft_lstlast(t_list *lst);</td>
+  <tr>
+    <td><a href="https://github.com/MelTami/Libft/blob/master/sources/ft_lstiter.c">ft_lstiter</a></td>
+    <td>Iterates the list ’lst’ and applies the function ’f’ on the content of each node.</td>
+    <td>void	ft_lstiter(t_list *lst, void (*f)(void *));</td>
+  </tr>
   </tr>
   <tr>
     <td><a href="https://github.com/MelTami/Libft/blob/master/sources/ft_lstmap.c">ft_lstmap</a></td>
@@ -99,6 +104,31 @@ The Libft is a project in the 42 course that we create a library, with the C hig
     <td>Counts the number of nodes in a list.</td>
     <td>int ft_lstsize(t_list *lst);</td>
   </tr>
+  <tr>
+    <td><a href="https://github.com/MelTami/Libft/blob/master/sources/ft_memchr.c">ft_memchr</a></td>
+    <td>Searches for the first occurrence of the character c (an unsigned char) in the first n bytes of the string pointed to, by the argument str.</td>
+    <td>void	*ft_memchr(const void *str, int c, unsigned int n);</td>
+  </tr>
+  <tr>
+    <td><a href="https://github.com/MelTami/Libft/blob/master/sources/ft_memcmp.c">ft_memcmp</a></td>
+    <td>Compares the first n bytes of memory area str1 and memory area str2</td>
+    <td>int	ft_memcmp(const void *str1, const void *str2, size_t n);</td>
+  </tr>
+  <tr>
+    <td><a href="https://github.com/MelTami/Libft/blob/master/sources/ft_memcpy.c">ft_memcpy</a></td>
+    <td>Copies n characters from memory area src to memory area dest</td>
+    <td>void	*ft_memcpy(void *dest, const void *src, unsigned int n);</td>
+  </tr>
+  <tr>
+    <td><a href="https://github.com/MelTami/Libft/blob/master/sources/ft_memmove.c">ft_memmove</a></td>
+    <td>Copies n characters from str2 to str1, but for overlapping memory blocks.</td>
+    <td>void	*ft_memmove(void *str1, void *str2, unsigned int n);</td>
+  </tr>
+  <tr>
+    <td><a href="https://github.com/MelTami/Libft/blob/master/sources/ft_memset.c">ft_memset</a></td>
+    <td>Copies the character c (an unsigned char) to the first n characters of the string pointed to, by the argument str.</td>
+    <td>void	*ft_memset(void *str, int c, unsigned int n);</td>
+</tr>
 </table>
 
 ## External functions
@@ -154,8 +184,13 @@ The Libft is a project in the 42 course that we create a library, with the C hig
     <td>t_list	*ft_lstfind(t_list *list, void *data, int (*cmp)())</td>
   </tr>
   <tr>
-    <td><a href="https://github.com/MelTami/Libft/blob/master/sources/ft_lstiter.c">ft_lstiter</a></td>
-    <td>Iterates the list ’lst’ and applies the function ’f’ to the content of each element.</td>
-    <td>void	ft_lstiter(t_list *lst, void (*f)(void *));</td>
+    <td><a href="https://github.com/MelTami/Libft/blob/master/sources/ft_lstsort.c">ft_lstsort</a></td>
+    <td>Chenge the order of the content in the node.</td>
+    <td>void	ft_lstsort(t_list *list, int start, int end);</td>
+  </tr>
+  <tr>
+    <td><a href="https://github.com/MelTami/Libft/blob/master/sources/ft_printf.c">ft_printf</a></td>
+    <td>Sends formatted output to stdout</td>
+    <td>int	ft_printf(const char *s, ...);</td>
 </tr>
 </table>
